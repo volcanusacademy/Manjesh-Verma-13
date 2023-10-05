@@ -1,3 +1,4 @@
+//Write a program that accepts three digit number and find out the sum of all the individual digits
 #include <stdio.h>
 
 void main() 
