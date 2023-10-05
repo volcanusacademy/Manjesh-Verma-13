@@ -1,3 +1,4 @@
+//Write a program that accepts 6 digit number and find out the sum of first and last digit
 #include<stdio.h>
 void main()
 {
