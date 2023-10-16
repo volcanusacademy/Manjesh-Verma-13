@@ -1,24 +1,23 @@
+
+// file writing code
+
 #include<iostream>
-#include<fstream>
+
+#include<fstream> //This Predefined library   is used for file handling
 using namespace std;
 
 int main()
 {
-    string Temp;
 
-
-    ifstream obj("file.txt");
-    if(obj.is_open())
+    ofstream ofs("file.txt");
+    if(ofs.is_open())
     {
-        while(getline(obj,Temp))
-        {
-            cout<<Temp;
-        }
-        obj.close();
+        ofs<<"\n Manjesh Verma \n First Aessessment";
+        ofs.close();
     }
     else
     {
-        cout<<"\n \n Unable to open";
+        cout<<"\n File opening is fail";
     }
 
     return 0; 
