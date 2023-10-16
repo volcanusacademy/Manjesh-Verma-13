@@ -1,0 +1,51 @@
+#include<stdio.h>
+void main()
+{
+int ch;
+double Length, Breath, Base, Area=0, Radius, Height, Side;
+
+printf("Area of Shape Please Enter choice. \n");
+
+printf(" 1. Rectangle In 2. Circle In 3. Square In 4. Cylinder In");
+printf("\n Enter Choice: ");
+
+scanf("%d",&ch);
+
+switch(ch)
+{
+ case 1: // Area of Rectange case
+    printf("Enter length and breath"); 
+    scanf("%lf%lf",&Length,&Breath); 
+    Area =Length*Breath; 
+    printf("Area =%.2lf ", Area); 
+    break;
+
+ case 2: // Area of Circle case
+    printf("Enter Radius"); 
+    scanf("%lf",&Radius);
+    Area=3.14*Radius*Radius;
+    printf("Area =%.2lf",Area);
+    break;
+
+ case 3: // Area of square case
+    printf("Enter Side "); 
+    scanf("%lf",&Side);
+    Area=Side*Side;
+    printf("Area=%.2lf",Area); 
+    break;
+ 
+ case 4: // Area of Cyclinder
+    printf("\nEnter Radius: ");                                                 
+    scanf("%lf", &Radius);                                                       
+                                                                                
+    printf("\nEnter height: ");                                                
+    scanf("%lf", &Height);                                                       
+                                                                                
+    Area = 3.14*(Radius*Radius*Height);                                         
+                                                                                
+    printf("Area of a cylinder is: %.2f", Area);
+ 
+  default:
+    printf("\n Invalid selection");
+}
+}
